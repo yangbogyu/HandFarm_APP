@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+    layout="@layout/corporation_toolbar"
+    android:id="@+id/top_view"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp">
+
+        <View
+            android:id="@+id/view_farm"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/corporation_top" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view_farm"
+            android:layout_above="@+id/view_farm"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="텃밭"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/h2gtre_b"/>
+
+        <View
+            android:id="@+id/crops_view"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/view_farm"
+            android:background="@drawable/corporation_top" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/crops_view"
+            android:layout_toRightOf="@+id/tv1"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="농작물"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/h2gtre_b"/>
+
+        <View
+            android:id="@+id/view_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_farm"
+            android:background="@color/colorTopbar"
+            android:layout_marginBottom="40dp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/from_but" />
+
+        <ImageButton
+            android:id="@+id/search_but"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/tv2"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/colorWhite"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="45dp"
+            android:layout_below="@+id/tv2"
+            android:layout_toRightOf="@+id/search_but"
+            android:fontFamily="@font/h2gtre"
+            android:text="검색"
+            android:textSize="15dp" />
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/search" />
+
+    </RelativeLayout>
+
+</LinearLayout>

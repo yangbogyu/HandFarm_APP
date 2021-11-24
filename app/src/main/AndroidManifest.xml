@@ -27,6 +27,7 @@
         <activity android:name=".main.Shoppingbag_Main"/>
         <activity android:name=".main.Join_main"/>
         <activity android:name=".main.information_main"/>
+        <activity android:name=".main.corporation_main"/>
     </application>
 
 </manifest>

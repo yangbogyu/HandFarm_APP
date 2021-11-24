@@ -41,12 +41,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // 회원정보 이동
         binding.topView.userBut.setOnClickListener {
             val intent = Intent(this, information_main::class.java)
             startActivity(intent)
         }
+
+        // 기업회원 이동
         binding.companyBut.setOnClickListener {
-            getText("기업회원 미구현")
+            val intent = Intent(this, corporation_main::class.java)
+            startActivity(intent)
 
         }
     }
