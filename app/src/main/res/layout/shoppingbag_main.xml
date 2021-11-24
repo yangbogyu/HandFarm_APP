@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/shoppingbag_toolbar"
+        android:id="@+id/top_view"/>
+
+    <ListView
+        android:id="@+id/shoppingbag_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_margin="20dp"
+        android:background="@color/colorGray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:gravity="right"
+            android:text="상품 금액"
+            android:fontFamily="@font/h2gtre_b"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:gravity="right"
+            android:text="8500원"
+            android:fontFamily="@font/h2gtre_b"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:gravity="right"
+            android:text="배송비"
+            android:fontFamily="@font/h2gtre_b"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:gravity="right"
+            android:text="2500원"
+            android:fontFamily="@font/h2gtre_b"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:text="결제 예정 금액"
+            android:fontFamily="@font/h2gtre_b"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:text="11000원"
+            android:fontFamily="@font/h2gtre_b"
+            android:textColor="@color/colorBut"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:text="구매하기"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/h2gtre_b"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/market_toolbar_but"
+        />
+
+</LinearLayout>

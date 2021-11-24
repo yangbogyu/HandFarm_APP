@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/img_x" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/item_img"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/h2gtre_b"
+        android:text="흙당근"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_title"
+        android:layout_toRightOf="@+id/item_img"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/h2gtre"
+        android:text="1kg당 2000원"
+        android:textColor="@color/colorBlack"
+        android:textSize="10dp" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+        android:layout_toLeftOf="@+id/user_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorGray"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/h2gtre"
+        android:text="김현아"
+        android:textSize="13dp" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorMint">
+
+    <Spinner
+        android:id="@+id/name_spn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/h2gtre_b"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorWhite"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="6"
+            android:text="수량 (단위 kg)"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:fontFamily="@font/h2gtre_b"
+            android:textColor="@color/colorBlack"/>
+
+        <ImageButton
+            android:id="@+id/plus_but"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:src="@drawable/plus"
+            android:background="@color/colorTopbar"
+            android:fontFamily="@font/h2gtre_b"
+            android:textColor="@color/colorBlack"/>
+
+        <EditText
+            android:id="@+id/market_quantity"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="1"
+            android:gravity="center"
+            android:background="@color/colorWhite"/>
+
+        <ImageButton
+            android:id="@+id/minus_but"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:src="@drawable/minus"
+            android:background="@color/colorTopbar"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/ok_but"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:text="장바구니 담기"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/h2gtre_b"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/market_toolbar_but"
+        />
+
+</LinearLayout>

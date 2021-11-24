@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/information_toolbar"
+        android:id="@+id/top_view"/>
+
+<!--    프로필 이미지, 구매, 예약, 거래-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:src="@drawable/img_x"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:text="구매 현황"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:text="예약 현황"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="거래 현황"/>
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    이름 / 회사명-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="이름 / 회사명"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:textColor="@color/colorMainBut"
+            android:fontFamily="@font/h2gtre_b"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="김OO"
+            android:gravity="left"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+    </LinearLayout>
+    <!--    사업자등록번호-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="사업자등록번호"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:textColor="@color/colorGray"
+            android:fontFamily="@font/h2gtre_b"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:gravity="left"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+    </LinearLayout>
+    <!--    아이디-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="아이디"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:textColor="@color/colorMainBut"
+            android:fontFamily="@font/h2gtre_b"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="kim0001"
+            android:gravity="left"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+    </LinearLayout>
+
+    <!--    닉네임-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="닉네임"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:textColor="@color/colorMainBut"
+            android:fontFamily="@font/h2gtre_b"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="당근이당"
+            android:gravity="left"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+    </LinearLayout>
+    <!--    이메일-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="이메일"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:textColor="@color/colorMainBut"
+            android:fontFamily="@font/h2gtre_b"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="kim0001@gmail.com"
+            android:gravity="left"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+    </LinearLayout>
+    <!--    연락처-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="연락처"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:textColor="@color/colorMainBut"
+            android:fontFamily="@font/h2gtre_b"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="010-1234-5678"
+            android:gravity="left"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+    </LinearLayout>
+    <!--    주소-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="주소"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:textColor="@color/colorMainBut"
+            android:fontFamily="@font/h2gtre_b"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="경기도 성남시 수정구 위례순환로17"
+            android:gravity="left"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/information_revise"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="회원정보 수정"/>
+</LinearLayout>

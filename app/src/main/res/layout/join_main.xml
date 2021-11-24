@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/join_toolbar"
+        android:id="@+id/top_view"/>
+
+<!-- 아이디 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="아이디"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/h2gtre_b"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="내용을 입력해주세요"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="중복확인"
+            android:textSize="16dp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/h2gtre_b"
+            android:background="@drawable/join_but"/>
+
+    </LinearLayout>
+
+    <!-- 비밀번호 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="비빌번호"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/h2gtre_b"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="내용을 입력해주세요"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="사용가능"
+            android:textSize="16dp"
+            android:textColor="@color/colorRed"
+            android:fontFamily="@font/h2gtre_b"/>
+
+    </LinearLayout>
+    <!-- 비밀번호 확인 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="비빌번호\n확인"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/h2gtre_b"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="내용을 입력해주세요"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="일치"
+            android:textSize="16dp"
+            android:textColor="@color/colorRed"
+            android:fontFamily="@font/h2gtre_b"/>
+
+    </LinearLayout>
+
+    <!-- 휴대폰 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="휴대폰"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/h2gtre_b"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:text="010"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_marginLeft="5dp"
+            android:text="-없이 입력"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+    </LinearLayout>
+
+    <!-- 주소 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="주소"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/h2gtre_b"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="주소검색"
+            android:textSize="16dp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/h2gtre_b"
+            android:background="@drawable/join_but"/>
+
+    </LinearLayout>
+
+    <!-- 상세 주소 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="2"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="상세 주소를 입력하세요"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+
+    </LinearLayout>
+
+    <!-- 이메일 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="이메일"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/h2gtre_b"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="\@"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="gmail.com"
+            android:textSize="16dp"
+            android:fontFamily="@font/h2gtre_b"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/corporation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/h2gtre"
+        android:text="기업 회원이라면?"
+        android:gravity="center"
+        android:textColor="@color/colorBlue"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/join_ok"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:text="가입하기"
+        android:fontFamily="@font/h2gtre"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/market_toolbar_but"/>
+
+</LinearLayout>

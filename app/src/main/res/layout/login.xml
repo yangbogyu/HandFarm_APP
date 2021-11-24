@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.login"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/logo_all_1" />
+
+        <ImageView
+            android:id="@+id/IDimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Logo"
+            android:layout_toLeftOf="@+id/name"
+            android:src="@drawable/user" />
+        <!--        아이디-->
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Logo"
+            android:layout_centerInParent="true"
+            android:hint="Username" />
+
+        <ImageView
+            android:id="@+id/PWimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/IDimg"
+            android:layout_toLeftOf="@+id/name"
+            android:src="@drawable/key" />
+        <!--        비밀번호-->
+        <EditText
+            android:id="@+id/passwd"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/name"
+            android:layout_centerInParent="true"
+            android:hint="******"
+            android:inputType="textPassword" />
+
+        <!--        로그인 버튼-->
+        <Button
+            android:id="@+id/login_but"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/passwd"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:background="#4CAF50"
+            android:fontFamily="@font/h2gtre"
+            android:text="로그인"
+            android:textColor="#FFFFFF"
+            tools:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_but"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/h2gtre"
+            android:text="아직 회원이 아니신가요?"
+            android:textColor="@color/colorBlue"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

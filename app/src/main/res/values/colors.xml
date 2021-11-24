@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorTopbar">#27AE60</color>
+    <color name="colorBut">#16A085</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorMainBut">#80E2A9</color>
+    <color name="colorNo">#00ff0000</color>
+    <color name="colorBlue">#0000FF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#ED615F5F</color>
+    <color name="colorSkyblue">#E8F9EF</color>
+    <color name="colorMint">#A7EDDF</color>
+    <color name="colorRed">#FF0000</color>
+
+
+</resources>

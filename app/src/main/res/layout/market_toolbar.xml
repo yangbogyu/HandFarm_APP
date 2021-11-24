@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="@color/colorTopbar">
+
+    <ImageButton
+        android:id="@+id/back_but"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorTopbar"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/logo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/back_but"
+        android:fontFamily="@font/comic"
+        android:lineSpacingExtra="-7dp"
+        android:text="Hand\nFarm"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/logo_text"
+        android:layout_toLeftOf="@+id/basket_but"
+        android:background="@drawable/market_toolbar_but"/>
+
+
+    <ImageButton
+        android:id="@+id/search_but"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toRightOf="@+id/logo_text"
+        android:background="@color/colorTopbar"
+        android:src="@drawable/search" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@+id/basket_but"
+        android:layout_toRightOf="@+id/search_but"
+        android:fontFamily="@font/h2gtre"
+        android:text="검색"
+        android:textSize="15dp" />
+
+    <ImageButton
+        android:id="@+id/basket_but"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorTopbar"
+        android:src="@drawable/add_cart" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="@color/colorTopbar">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@color/colorTopbar"
+        android:onClick="restartmain" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HandFarm"
+        android:textSize="30dp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/comic"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageButton
+        android:id="@+id/user_but"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:src="@drawable/user_top"
+        android:background="@color/colorTopbar"/>
+
+</FrameLayout>

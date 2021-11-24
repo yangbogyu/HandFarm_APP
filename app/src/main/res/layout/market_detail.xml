@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".main.">
+
+    <include
+        layout="@layout/market_detail_toolbar"
+        android:id="@+id/top_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="7"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="등록일 : "
+            android:textColor="@color/colorBlack"
+            android:textSize="11dp"/>
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="21.10.10"
+            android:textColor="@color/colorBlack"
+            android:textSize="11dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/img_x"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/seller"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/h2gtre_b"
+                    android:gravity="right"
+                    android:text="판매자: "
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/sortation"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="구  분: "
+                    android:textSize="15dp"
+                    android:gravity="right"
+                    android:fontFamily="@font/h2gtre_b"/>
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="가격(kg): "
+                    android:textSize="15dp"
+                    android:gravity="right"
+                    android:fontFamily="@font/h2gtre_b"/>
+
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/h2gtre_b"
+                    android:gravity="right"
+                    android:text="남은수량: "
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/seller_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/h2gtre"
+                    android:text="김현아"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/sortation_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/h2gtre"
+                    android:text="뿌리채소"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/price_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/h2gtre"
+                    android:text="1800원"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/quantity_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/h2gtre"
+                    android:text="18kg"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="간단한 설명"
+        android:textColor="@color/colorBlack"
+        android:textSize="17dp"
+        android:fontFamily="@font/h2gtre_b"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="당근은 맛있당"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp"
+        android:fontFamily="@font/h2gtre"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="판매자의 다른 작물"
+        android:textColor="@color/colorBlack"
+        android:textSize="17dp"
+        android:fontFamily="@font/h2gtre_b"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:background="@color/colorSkyblue">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:text="김현아"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:fontFamily="@font/h2gtre"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:text="호감도"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="10dp"
+                android:fontFamily="@font/h2gtre"/>
+
+            <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:numStars="5" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="9"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/img_x"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:text="작물"
+                android:gravity="center|top"
+                android:textColor="@color/colorBlack"
+                android:textSize="10dp"
+                android:fontFamily="@font/h2gtre"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="9"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/img_x"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:text="작물"
+                android:gravity="center|top"
+                android:textColor="@color/colorBlack"
+                android:textSize="10dp"
+                android:fontFamily="@font/h2gtre"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="9"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/img_x"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:text="작물"
+                android:gravity="center|top"
+                android:textColor="@color/colorBlack"
+                android:textSize="10dp"
+                android:fontFamily="@font/h2gtre"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="장바구니 담기"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:fontFamily="@font/h2gtre_b"
+        android:background="@drawable/market_toolbar_but"
+        />
+
+
+
+
+</LinearLayout>

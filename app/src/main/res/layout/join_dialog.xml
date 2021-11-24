@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+<!--기업명-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="4"
+            android:text="기업명"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:fontFamily="@font/h2gtre_b"
+            android:textColor="@color/colorBlack"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="내용을 입력하시오."
+            android:textSize="13dp"
+            android:fontFamily="@font/h2gtre_b"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <!--사업자 등록번호-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="4"
+            android:text="사업자\n등록번호"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:fontFamily="@font/h2gtre_b"
+            android:textColor="@color/colorBlack"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="내용을 입력하시오."
+            android:textSize="13dp"
+            android:fontFamily="@font/h2gtre_b"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_weight="4"
+        android:layout_marginLeft="35dp"
+        android:text="사업장 주소"
+        android:textSize="13dp"
+        android:gravity="center"
+        android:fontFamily="@font/h2gtre_b"
+        android:textColor="@color/colorBlack"/>
+    <!--사업장 주소-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="7"
+            android:layout_marginRight="20dp"
+            android:text="내용을 입력하시오."
+            android:textSize="13dp"
+            android:fontFamily="@font/h2gtre_b"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:text="주소검색"
+            android:textSize="13dp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/h2gtre_b"
+            android:background="@drawable/join_but"/>
+    </LinearLayout>
+<!--상세주소-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="상세 주소를 입력하세요."
+        android:textSize="13dp"
+        android:fontFamily="@font/h2gtre_b"
+        android:gravity="center"/>
+
+<!--버튼-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/not_but"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:text="취소"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/h2gtre_b"
+            android:textColor="@color/colorBlack"/>
+        <Button
+            android:id="@+id/ok_but"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:text="저장"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/h2gtre_b"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+</LinearLayout>
