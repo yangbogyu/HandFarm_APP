@@ -8,6 +8,8 @@
     <include
     layout="@layout/corporation_toolbar"
     android:id="@+id/top_view"/>
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,7 +63,16 @@
             android:background="@color/colorTopbar"
             android:layout_marginBottom="40dp"/>
 
+        <include
+            android:id="@+id/farm"
+            android:layout_below="@id/tv2"
+            layout="@layout/corporation_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
         <View
+            android:id="@+id/seller_view"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_below="@+id/tv2"
@@ -84,7 +95,7 @@
             android:src="@drawable/search" />
 
         <EditText
-            android:id="@+id/search"
+            android:id="@+id/search_edt"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="3dp"
@@ -96,13 +107,12 @@
             android:text="검색"
             android:textSize="15dp" />
 
-
         <ListView
             android:id="@+id/list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/search" />
+            android:layout_below="@+id/search_edt"
+            android:layout_marginTop="10dp" />
 
     </RelativeLayout>
 

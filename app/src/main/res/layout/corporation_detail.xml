@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBut">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="등록명"
+        android:fontFamily="@font/h2gtre_b"
+        android:textSize="15dp"
+        android:background="@drawable/edit_text"/>
+
+<!--    이미지 추가-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/img_x"
+            android:background="@drawable/edit_text"/>
+
+        <Button
+            android:id="@+id/img_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/h2gtre_b"
+            android:text="이미지 첨부" />
+    </LinearLayout>
+
+<!--    주소-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="위치"
+            android:fontFamily="@font/h2gtre_b"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/text_back"/>
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edit_text"/>
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edit_text"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="상세주소"
+            android:fontFamily="@font/h2gtre_b"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/edit_text"/>
+    </LinearLayout>
+
+    <!--    면적-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="총 면적"
+            android:fontFamily="@font/h2gtre_b"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/text_back"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="내용을 입력해주세요"
+            android:fontFamily="@font/h2gtre_b"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/edit_text"/>
+    </LinearLayout>
+    <!--    임대료-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="임대료"
+            android:fontFamily="@font/h2gtre_b"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/text_back"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="평"
+            android:fontFamily="@font/h2gtre_b"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/edit_text"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="원"
+            android:fontFamily="@font/h2gtre_b"
+            android:gravity="right"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/edit_text"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="편 집"
+        android:fontFamily="@font/h2gtre_b"
+        android:textColor="@color/colorBlack"/>
+
+</LinearLayout>

@@ -23,8 +23,6 @@ class Shoppingbag_Main : AppCompatActivity(){
         val shoppingbag_Adpa = Shoppingbag_Adpater(this, list)
         binding.shoppingbagList.adapter = shoppingbag_Adpa
 
-
-
         // 장터 화면이동
         binding.topView.backBut.setOnClickListener {
             val intent = Intent(this, Market_Main::class.java)

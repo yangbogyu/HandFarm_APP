@@ -31,7 +31,6 @@ class Market_Adpater (val context: Context,val Market_List: ArrayList<Market_Dat
         val item_price = view.findViewById<TextView>(R.id.item_price)
         val user_name = view.findViewById<TextView>(R.id.user_name)
 
-
         val market = Market_List[position]
 //        이미지 처리 생략
 //        val resourceId = context.resources.getIdentifier(market.item_img, "drawable",context.packageName)

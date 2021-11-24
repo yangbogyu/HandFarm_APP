@@ -52,6 +52,7 @@ class Market_Main : AppCompatActivity(){
             // 마켓 새부정보 화면이동
             val intent = Intent(this, Market_Detail::class.java)
             startActivity(intent)
+
         }
     }
 
