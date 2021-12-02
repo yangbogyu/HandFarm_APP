@@ -19,6 +19,7 @@ class Market_Detail : AppCompatActivity(){
 
 
 
+
         // 마켓 화면이동
         binding.topView.backBut.setOnClickListener {
             val intent = Intent(this, Market_Main::class.java)

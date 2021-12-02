@@ -49,6 +49,11 @@
                 android:text="장터"
                 android:textSize="22dp" />
 
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
         </LinearLayout>
 
         <LinearLayout

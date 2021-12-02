@@ -2,30 +2,30 @@ package com.example.handfarm.main
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.RecyclerView
 import com.example.handfarm.adpater.Market_Adpater
-import com.example.handfarm.data.Market_Data
 import com.example.handfarm.R
-import com.example.handfarm.adpater.Sharing_Adpater
-import com.example.handfarm.databinding.DiaryMainBinding
 import com.example.handfarm.databinding.MarketMainBinding
 import com.example.handfarm.detail.Market_Detail
+import com.example.handfarm.main.data.Market_Data
+import retrofit2.Call
+import retrofit2.Response
 
 class Market_Main : AppCompatActivity(){
 
-    val datas = mutableListOf<Market_Data>()
-
     private lateinit var binding: MarketMainBinding
+//    var marketlist = arrayListOf<Market_Data.marketList>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = MarketMainBinding.inflate(layoutInflater)
         setContentView(binding.root) // contentView에 등록
 
-        val market_Adpa = Market_Adpater(this, list)
+        getText(HandFarmSingle.marketlist.toString())
+        val market_Adpa = Market_Adpater(this, HandFarmSingle.marketlist)
         binding.marketList.adapter = market_Adpa
 
 
@@ -47,21 +47,20 @@ class Market_Main : AppCompatActivity(){
         }
 
         binding.marketList.setOnItemClickListener { parent : AdapterView<*>, view: View, position: Int, id: Long ->
-            val item = parent.getItemAtPosition(position) as Market_Data
+            val item = parent.getItemAtPosition(position) as Market_Data.marketList
+
+            getText(item)
 
             // 마켓 새부정보 화면이동
             val intent = Intent(this, Market_Detail::class.java)
+            intent.putExtra
             startActivity(intent)
 
         }
     }
-
-
-    val list = arrayListOf<Market_Data>(
-        Market_Data("","흙당근","1kg당 2000원","김현아"),
-        Market_Data("","당근","1kg당 2000원","양보규"),
-        Market_Data("","작은당근","1kg당 2000원","고명"),
-        Market_Data("","큰당근","1kg당 2000원","최영환"),
-        Market_Data("","직접키운당근","1kg당 2000원","김현아")
-    )
+    //토스트
+    private fun getText(text:String){
+        val toast = Toast.makeText(applicationContext, text, Toast.LENGTH_SHORT)
+        toast.show()
+    }
 }
