@@ -19,7 +19,18 @@ class Market_Detail : AppCompatActivity(){
         setContentView(binding.root) // contentView에 등록
 
 //        binding.sellerName.text(HandFarmSingle.marketlist.get(1).me_name) //판매자 이름
-
+        val intent = intent
+        val idx = intent.extras!!.getInt("position") //idx 인덱스 가져온거
+        binding.sellerName.text=HandFarmSingle.marketlist.get(idx).me_name
+        binding.sortationText.text=HandFarmSingle.marketlist.get(idx).crop_variety
+        binding.priceText.text=HandFarmSingle.marketlist.get(idx).product_price
+        binding.quantityText.text=(HandFarmSingle.marketlist.get(idx).product_sell +
+                HandFarmSingle.marketlist.get(idx).product_amount)
+        binding.dateText.text=HandFarmSingle.marketlist.get(idx).product_redate
+        binding.sellerName.text=HandFarmSingle.marketlist.get(idx).me_name
+        binding.explnD.text=HandFarmSingle.marketlist.get(idx).product_explanation
+        binding.topView.logoText.text=HandFarmSingle.marketlist.get(idx).product_name
+        binding.sellerNameU.text=HandFarmSingle.marketlist.get(idx).me_name
 
         // 마켓 화면이동
         binding.topView.backBut.setOnClickListener {
