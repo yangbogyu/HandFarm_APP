@@ -2,10 +2,8 @@ package com.example.handfarm.main.data
 
 import com.google.gson.annotations.SerializedName
 
-data class Login_Data(
-    val login : Boolean, //비빌번호 확인
-    val data : List<UserData>)
-{
+data class Login_Data( val login : Boolean, //비빌번호 확인
+    val data : UserData?){
     data class UserData(
         val me_code : Int,      // 코드
         val me_name : String,   // 이름
@@ -16,6 +14,6 @@ data class Login_Data(
     )
 }
 data class Login_PUT(
-    @SerializedName("me_id") val me_id : String,
-    @SerializedName("me_pw") val me_pw : String
+    val me_id : String,
+    val me_pw : String
 )
