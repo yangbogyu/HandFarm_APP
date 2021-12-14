@@ -46,14 +46,16 @@ class Market_Main : AppCompatActivity(){
             startActivity(intent)
         }
 
+        // 상품 클릭시
         binding.marketList.setOnItemClickListener { parent : AdapterView<*>, view: View, position: Int, id: Long ->
             val item = parent.getItemAtPosition(position) as Market_Data.marketList
 
-            getText(item)
+            getText(""+position)
 
             // 마켓 새부정보 화면이동
             val intent = Intent(this, Market_Detail::class.java)
-            intent.putExtra
+
+//            intent.putExtra('position', position)
             startActivity(intent)
 
         }

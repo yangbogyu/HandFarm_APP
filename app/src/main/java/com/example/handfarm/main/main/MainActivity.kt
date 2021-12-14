@@ -27,7 +27,9 @@ class MainActivity : AppCompatActivity() {
         // 마켓 이동
         binding.marketBut.setOnClickListener {
             val intent = Intent(this, Market_Main::class.java)
-            HandFarmSingle.api.getUserInfo().enqueue(object : retrofit2.Callback<Market_Data>{
+
+            //
+            HandFarmSingle.api.getMarketInfo().enqueue(object : retrofit2.Callback<Market_Data>{
                 override fun onResponse(call: Call<Market_Data>, response: Response<Market_Data>) {
                     val marketInfo = response.body()
                     if (marketInfo != null) {

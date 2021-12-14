@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.handfarm.databinding.MarketDetailBinding
 import com.example.handfarm.dialog.Market_Dialog
+import com.example.handfarm.main.HandFarmSingle
 import com.example.handfarm.main.Market_Main
 import com.example.handfarm.main.Shoppingbag_Main
 
@@ -17,7 +18,7 @@ class Market_Detail : AppCompatActivity(){
         binding = MarketDetailBinding.inflate(layoutInflater)
         setContentView(binding.root) // contentView에 등록
 
-
+//        binding.sellerName.text(HandFarmSingle.marketlist.get(1).me_name) //판매자 이름
 
 
         // 마켓 화면이동

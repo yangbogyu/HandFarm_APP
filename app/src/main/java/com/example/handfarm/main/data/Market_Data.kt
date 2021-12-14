@@ -9,6 +9,6 @@ data class Market_Data(val market : List<marketList>){
         val product_sell : String,          // 총 판매 수량
         val product_explanation : String,   // 소개
         val product_redate : String,        // 등록일자
-        val me_name : String                // 판매자 코드
+        val me_name : String                // 판매자 이름
     )
 }

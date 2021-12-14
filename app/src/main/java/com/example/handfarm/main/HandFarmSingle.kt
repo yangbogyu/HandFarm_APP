@@ -10,12 +10,9 @@ object HandFarmSingle {
     var marketlist = arrayListOf<Market_Data.marketList>()
     init {
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://13.125.244.167")
+            .baseUrl("http://15.164.118.47")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-
         api = retrofit.create(API::class.java)
     }
-
-
 }

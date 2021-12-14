@@ -15,11 +15,13 @@ class login : AppCompatActivity() {
         binding = LoginBinding.inflate(layoutInflater)
         setContentView(binding.root) // contentView에 등록
 
-
-
-
         // 로그인
         binding.loginBut.setOnClickListener {
+
+            // 로그인 구현
+//            HandFarmSingle.api.getUserInfo(userData : )
+
+
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
